@@ -1,0 +1,142 @@
+/* CSS VARIABLES */
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.top-form {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "nAME eMAIL"
+    "tEL cOUNTRY";
+}
+
+.nAME {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  padding: 1.4rem;
+  border-radius: 20px;
+}
+
+.eMAIL {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  padding: 1.4rem;
+  border-radius: 20px;
+}
+
+.tEL {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  padding: 1.4rem;
+  border-radius: 20px;
+}
+
+.cOUNTRY {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  padding: 1.4rem;
+  border-radius: 20px;
+}
+
+.mMessage {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  padding: 1.4rem;
+  border-radius: 20px;
+}
+
+.headingdiv h2 {
+  text-align: center;
+  font-size: 3.4rem;
+}
+
+.typtext {
+  text-align: center;
+}
+
+.textbox {
+  height: 10vh;
+}
+
+.but {
+  text-align: center;
+}
+
+/* social */
+
+.social-caontainer {
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: black;
+  justify-items: center;
+  box-shadow: var(--shadow);
+}
+
+.social-caontainer img {
+  width: 100px;
+  box-shadow: var(--shadow);
+  padding: 3.4rem;
+  background: var(--primary);
+  margin: 1.4rem;
+}
+
+/* HECK YEAH! done AFTER 8 HOURS */
+
+@media (max-width: 400px) {
+  .top-form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      "nAME"
+      "eMAIL"
+      "tEL"
+      "cOUNTRY";
+  }
+
+  .social-caontainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .top-form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      "nAME"
+      "eMAIL"
+      "tEL"
+      "cOUNTRY";
+  }
+
+  .social-caontainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .top-form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      "nAME"
+      "eMAIL"
+      "tEL"
+      "cOUNTRY";
+  }
+
+  .social-caontainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

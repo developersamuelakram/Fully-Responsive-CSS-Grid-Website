@@ -1,0 +1,175 @@
+/* CSS VARIABLES */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 2px 5px rgba(104, 104, 104, 0.8);
+}
+
+.firstcontainer {
+  background: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 1.2rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+  grid-template-areas: "skillimageone servicedescriptionOne servicedescriptionOne";
+}
+
+.skillimageOne img {
+  width: 100px;
+}
+
+.skillimageOne {
+  background: var(--dark);
+  text-align: center;
+  padding: 1.9rem;
+}
+
+.secondcontainer {
+  background: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 1.2rem;
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+  grid-template-areas: "skillimagetwo servicedescriptiontwo servicedescriptiontwo";
+}
+
+.skillimagetwo img {
+  width: 100px;
+}
+
+.skillimagetwo {
+  background: var(--dark);
+  text-align: center;
+  padding: 1.9rem;
+}
+
+.thirdcontainer {
+  background: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 1.2rem;
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+  grid-template-areas: "skillimagethree servicedescriptionthree servicedescriptionthree";
+}
+
+.skillimagethird img {
+  width: 100px;
+}
+
+.skillimagethird {
+  background: var(--dark);
+  text-align: center;
+  padding: 1.9rem;
+}
+
+.fourthcontainer {
+  background: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 1.2rem;
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+  grid-template-areas: "skillimagefourth servicedescriptionfourth servicedescriptionfourth";
+}
+
+.skillimagefourth img {
+  width: 100px;
+}
+
+.skillimagefourth {
+  background: var(--dark);
+  text-align: center;
+  padding: 1.9rem;
+}
+
+/* media queries */
+@media (max-width: 700px) {
+  .firstcontainer {
+    grid-template-areas: "skillimageOne";
+  }
+
+  .secondcontainer {
+    grid-template-areas: "skillimagetwo";
+  }
+
+  .thirdcontainer {
+    grid-template-areas: "skillimagethree";
+  }
+
+  .fourthcontainer {
+    grid-template-areas: "skillimagefour";
+  }
+
+  .headingall {
+    text-align: center;
+  }
+  .paraall {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .firstcontainer {
+    grid-template-areas: "skillimageOne";
+  }
+
+  .secondcontainer {
+    grid-template-areas: "skillimagetwo";
+  }
+
+  .thirdcontainer {
+    grid-template-areas: "skillimagethree";
+  }
+
+  .fourthcontainer {
+    grid-template-areas: "skillimagefour";
+  }
+
+  .headingall {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .paraall {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .firstcontainer {
+    grid-template-areas: "skillimageOne";
+  }
+
+  .secondcontainer {
+    grid-template-areas: "skillimagetwo";
+  }
+
+  .thirdcontainer {
+    grid-template-areas: "skillimagethree";
+  }
+
+  .fourthcontainer {
+    grid-template-areas: "skillimagefour";
+  }
+
+  .headingall {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .paraall {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+}
