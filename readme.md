@@ -10,7 +10,7 @@
 
 # Third Page
 
-![](images/img4.jpg);
+![](images/image4.jpg);
 
 # MOBILE RESPONSIVE
 
