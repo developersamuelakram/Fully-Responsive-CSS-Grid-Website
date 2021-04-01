@@ -16,7 +16,7 @@ html {
 
 body {
   background-color: #ccc;
-  margin: 30px 50px;
+  margin: 10px 10px;
   line-height: 1.4;
 }
 
@@ -34,6 +34,7 @@ img {
   grid-gap: 20px;
   list-style: none;
   grid-template-columns: repeat(4, 1fr);
+  padding: 0;
 }
 
 .main-nav a {
@@ -208,6 +209,37 @@ footer {
 
   .main-nav ul {
     grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .top-container {
+    grid-template-areas:
+      "showcase"
+      "top-box-a"
+      "top-box-b";
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .showcase {
+    padding: 10px;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+    padding: 10px;
   }
 
   .info {
