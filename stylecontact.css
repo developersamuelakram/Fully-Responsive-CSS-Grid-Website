@@ -31,6 +31,19 @@
   border-radius: 20px;
 }
 
+.formdesign input {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+
+.formdesign textarea {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem;
+}
 .tEL {
   display: flex;
   flex-direction: column;
@@ -53,11 +66,13 @@
   background: var(--primary);
   padding: 1.4rem;
   border-radius: 20px;
+  margin-top: 1.2rem;
+  margin-bottom: 2.2rem;
 }
 
 .headingdiv h2 {
   text-align: center;
-  font-size: 3.4rem;
+  font-size: 2.4rem;
 }
 
 .typtext {
@@ -70,25 +85,30 @@
 
 .but {
   text-align: center;
+  margin-bottom: 1.1rem;
 }
 
-/* social */
+/* socialshit */
 
-.social-caontainer {
-  grid-gap: 20px;
+.socialcont {
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  background: black;
-  justify-items: center;
-  box-shadow: var(--shadow);
+  text-align: center;
 }
 
-.social-caontainer img {
+.socialcont img {
   width: 100px;
-  box-shadow: var(--shadow);
-  padding: 3.4rem;
+}
+
+.socialBox {
+  border-radius: 20px;
   background: var(--primary);
-  margin: 1.4rem;
+  padding: 1.8rem;
+}
+
+.socialBox h3 {
+  font-size: 0.9rem;
 }
 
 /* HECK YEAH! done AFTER 8 HOURS */
@@ -103,10 +123,6 @@
       "tEL"
       "cOUNTRY";
   }
-
-  .social-caontainer {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
 }
 
 @media (max-width: 500px) {
@@ -118,10 +134,6 @@
       "eMAIL"
       "tEL"
       "cOUNTRY";
-  }
-
-  .social-caontainer {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
@@ -136,7 +148,9 @@
       "cOUNTRY";
   }
 
-  .social-caontainer {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .addresscontainer {
+    grid-template-areas:
+      "Mars Mars Mars"
+      "Singapore";
   }
 }

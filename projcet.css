@@ -1,0 +1,152 @@
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.topcontainer {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "firstproject detailBoxOne detailBoxOne ";
+  border-radius: 20px;
+  background: var(--primary);
+  padding: 1.8rem;
+}
+
+.firstproject {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  grid-area: firstproject;
+}
+
+.detailBoxOne {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  grid-area: detailBoxOne;
+}
+
+/* mid container */
+
+.midcontainer {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "detailBoxTwo detailBoxTwo secondproject  ";
+  border-radius: 20px;
+  background: var(--primary);
+  padding: 1.8rem;
+}
+
+.secondproject {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  grid-area: secondproject;
+}
+
+.detailBoxTwo {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  grid-area: detailBoxTwo;
+}
+
+/* third container */
+
+.thirdcontainer {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "thirdproject thirdproject detailBoxThird  ";
+  border-radius: 20px;
+  background: var(--primary);
+  padding: 1.8rem;
+}
+
+.thirdproject {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  grid-area: thirdproject;
+}
+
+.detailBoxThird {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  grid-area: detailBoxThird;
+}
+
+/* fourth container */
+
+.lastcont {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "detailBoxFourth detailBoxFourth fourthproject  ";
+  border-radius: 20px;
+  background: var(--primary);
+  padding: 1.8rem;
+}
+
+.fourthproject {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  grid-area: fourthproject;
+}
+
+.detailBoxFourth {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  grid-area: detailBoxFourth;
+}
+
+@media (max-width: 700px) {
+  .topcontainer {
+    grid-template-areas: "firstproject detailBoxOne";
+  }
+
+  .midcontainer {
+    grid-template-areas: "detailBoxTwo secondproject ";
+  }
+
+  .thirdcontainer {
+    grid-template-areas: "thirdproject detailBoxThird";
+  }
+
+  .lastcont {
+    grid-template-areas: "detailBoxFourth fourthproject ";
+  }
+}
+
+@media (max-width: 500px) {
+  .topcontainer {
+    grid-template-areas:
+      "firstproject"
+      "detailBoxOne";
+    justify-items: center;
+  }
+
+  .midcontainer {
+    grid-template-areas:
+      "secondproject"
+      "detailBoxTwo";
+    justify-items: center;
+  }
+
+  .thirdcontainer {
+    grid-template-areas:
+      "thirdproject"
+      "detailBoxThird";
+    justify-items: center;
+  }
+
+  .lastcont {
+    grid-template-areas:
+      "fourthproject"
+      "detailBoxFourth";
+    justify-items: center;
+  }
+}
